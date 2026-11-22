@@ -110,10 +110,10 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3,.identity-mark,.footer-logo{font-family:"Manrop
 .project-card[hidden]{display:none}
 .project-card-featured,.project-card-wide{grid-column:span 2}
 .project-media{height:334px;position:relative;overflow:hidden;border-radius:18px;isolation:isolate;background:#23203d}
-.project-card-featured .project-media{height:474px}
+.project-card-featured .project-media{height:560px}
 .project-card-wide .project-media{height:403px}
 .project-media img{height:100%;width:100%;object-fit:cover;object-position:center;display:block;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
-.project-card-featured .project-media img{object-position:center 53%}
+.project-card-featured .project-media img{object-position:center 26%}
 .project-card:hover .project-media img{transform:scale(1.045)}
 .project-media:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,14,30,.41),transparent 50%);pointer-events:none}
 .project-watermark{position:absolute;right:24px;top:20px;font-size:13px;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,.7);z-index:1}
