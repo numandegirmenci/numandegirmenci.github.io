@@ -1,31 +1,28 @@
-# Osman Numan Değirmenci — Kişisel Portfolyo
+# Numan Değirmenci — Kişisel Portfolyo
 
-İdari işler, saha operasyonları, mağaza açılış ve ruhsat süreçleri, lojistik deneyimi ve dijital ürün geliştirme odaklı kişisel web sitesi.
+**Yayın adresi:** https://numandegirmenci.github.io/
 
-- **Planlanan adres:** https://numandegirmenci.github.io/
-- **Yayın altyapısı:** GitHub Pages (ücretsiz)
-- **Yapı:** HTML, CSS ve JavaScript; derleme ve API anahtarı gerekmez.
-- **İçerikler:** Hakkımda, kariyer rolleri, uzmanlık, GitHub projeleri, doğrulanmış LinkedIn paylaşımları, çalışma yaklaşımı ve iletişim.
-- **Tema:** İlk açılışta koyu tema; ziyaretçi isterse açık temaya geçebilir. Tercih tarayıcıda saklanır.
-- **LinkedIn:** https://www.linkedin.com/in/numandegirmencii/
-- **Güncelleme:** `index.html`, `styles.css`, `app.js` düzenlenerek yapılır.
+İdari işler, lojistik ve saha operasyonları deneyimimi, geliştirdiğim açık kaynaklı dijital araçları ve LinkedIn paylaşımlarımı bir araya getiren kişisel web sitesi.
 
-## Yayınlama
+## Yayın
+- GitHub Pages, `main` dalının kök dizininden servis edilir.
+- Site statiktir: HTML / CSS / JavaScript. Derleme veya ücretli hosting gerektirmez.
+- Varsayılan tema **koyu**, tarayıcıda açık tema tercihi saklanabilir.
+- Siteyi düzenlemek için `index.html`, `styles.css`, `app.js` dosyalarını güncelle.
 
-GitHub depo sayfasında **Settings → Pages → Build and deployment → Deploy from a branch → main / (root)** seçilip kaydedilir. Pages etkinleştiğinde adres açılır.
+## Profil bağlantıları
+- LinkedIn: https://www.linkedin.com/in/numandegirmencii/
+- GitHub: https://github.com/numandegirmenci
+- Instagram ve YouTube profillerinin **tam adresleri henüz doğrulanmadı**. Bağlantılar `app.js` dosyasının başındaki `SOCIAL_PROFILE_URLS` alanına yazıldığında sosyal kartlar otomatik etkinleşir. Bu tarihe kadar ziyaretçilere görünmezler; yanlış hesaplara yönlendirme yapılmaz.
+
+## İçerik ve doğrulama
+- Kariyer geçmişi, kullanıcı tarafından paylaşılan deneyim ve çalışma alanlarını temel alır. Doğrulanamayan işveren adı, çalışma dönemi veya performans göstergesi uydurulmamıştır.
+- Projeler, GitHub README dosyalarıyla eşleştirilmiştir.
+- LinkedIn paylaşımları, kullanıcının GitHub projelerine bağlanan iki herkese açık gönderiyi işaret eder.
+- Projeler beta veya geliştirme aşamasında olabilir. Gerçek kullanım için her projenin kendi kurulum, test ve güvenlik notlarını kontrol edin.
 
 ## Alan adı
+Henüz `numandegirmenci.com` satın alınmadı ve DNS yapılandırması yapılmadı. GitHub Pages adresi kullanılmaya devam eder. Özel alan adı alındığında GitHub Pages ayarları ve DNS kayıtları ayrıca yapılandırılmalıdır.
 
-Özel alan adı henüz satın alınmadı veya bağlanmadı. Satın alınırsa DNS ve Pages Custom domain ayarları ayrıca yapılır. **CNAME dosyası henüz eklenmemiştir.**
-
-## İletişim
-
-Şu an doğrulanmış iletişim e-postası olmadığı için sitede mesaj gönderen form bulunmaz. İletişim için doğrulanmış LinkedIn profil bağlantısı ve GitHub profili gösterilir.
-
-## İçerik kaynağı ve kapsam
-
-İş deneyimi ve görev alanları kullanıcı tarafından daha önce paylaşılan bilgilerle; projelerin teknik tanımları ilgili GitHub README dosyalarıyla; yayın notları ve çalışma motivasyonları herkese açık iki LinkedIn paylaşımıyla ilişkilendirilmiştir. LinkedIn profilinin tüm iş geçmişine erişilemediği için şirket adı, başlangıç-bitiş tarihi ve doğrulanmamış KPI eklenmedi.
-
-## Lisans ve içerik
-
-Portfolyo içeriği kişiye özeldir. Bağlantı verilen diğer depoların lisansları ayrı ayrı geçerlidir.
+## Gizlilik
+Site çerez, izleme pikseli veya analitik kullanmaz. Google Fonts harici yazı tipi kaynağıdır; bu servisi kaldırıp sistem fontları da kullanılabilir.
