@@ -10,7 +10,7 @@ function updateTheme() {
 updateTheme();
 themeBtn.addEventListener('click', () => {
   root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  try { localStorage.setItem('nd-theme-v2', root.dataset.theme); } catch (_) {}
+  try { localStorage.setItem('nd-theme-v3', root.dataset.theme); } catch (_) {}
   updateTheme();
 });
 const menuBtn = document.getElementById('menuBtn');
