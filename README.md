@@ -1,28 +1,46 @@
 # Numan Değirmenci — Kişisel Portfolyo
 
-**Yayın adresi:** https://numandegirmenci.github.io/
+Yayın: **https://numandegirmenci.github.io/**
 
-İdari işler, lojistik ve saha operasyonları deneyimimi, geliştirdiğim açık kaynaklı dijital araçları ve LinkedIn paylaşımlarımı bir araya getiren kişisel web sitesi.
+İdari işler ve operasyon deneyimini gerçek iş problemlerinden doğan dijital projelerle bir araya getiren kişisel web sitesi.
 
-## Yayın
-- GitHub Pages, `main` dalının kök dizininden servis edilir.
-- Site statiktir: HTML / CSS / JavaScript. Derleme veya ücretli hosting gerektirmez.
-- Varsayılan tema **koyu**, tarayıcıda açık tema tercihi saklanabilir.
-- Siteyi düzenlemek için `index.html`, `styles.css`, `app.js` dosyalarını güncelle.
+## Sürüm 5 — Görsel ve etkileşimli portfolyo
 
-## Profil bağlantıları
+- **Koyu tema varsayılan.** Açık tema tercihi de desteklenir ve tarayıcıda saklanır.
+- Görsel çalışma alanında dört projenin temsili ekran sunumu; **01–04** düğmelerine veya klavyede 1–4 tuşlarına basılarak değiştirilebilir.
+- Dört proje için özgün `assets/*.svg` sunum görselleri. Bunlar gerçek uygulama ekran görüntüleri **değildir**.
+- Filtrelenebilir, büyük görselli proje galerisi ve proje başına yerel `<dialog>` ayrıntı penceresi.
+- Etkileşimli **Operasyon / Dijital üretim** bölümü.
+- Mesleki deneyim, LinkedIn paylaşımları, GitHub profili ve sosyal bağlantılar.
+- Kaydırma ilerleme göstergesi, hafif hareket efektleri ve azaltılmış hareket tercihine destek.
+- Masaüstü, tablet ve mobil için duyarlı arayüz; küçük görsel varlıklar ve derlemesiz dağıtım.
+
+## Dosyalar
+
+- `index.html`: içerik, görsel galeri, proje detayları ve bağlantılar
+- `styles.css`: koyu/açık tema, animasyonlar, responsive düzen
+- `app.js`: tema, mobil menü, etkileşimler, filtreler, modaller
+- `assets/gunizi.svg`: Günİzi sunum görseli
+- `assets/ocr.svg`: Türkçe PDF OCR sunum görseli
+- `assets/outlook.svg`: Outlook İş ve Yanıt Radarı sunum görseli
+- `assets/pdf-tools.svg`: Windows PDF aracı sunum görseli
+- `favicon.svg`: küçük site ikonu
+- `robots.txt`, `sitemap.xml`: temel arama motoru keşfi
+
+## Sosyal medya
+
 - LinkedIn: https://www.linkedin.com/in/numandegirmencii/
 - GitHub: https://github.com/numandegirmenci
-- Instagram ve YouTube profillerinin **tam adresleri henüz doğrulanmadı**. Bağlantılar `app.js` dosyasının başındaki `SOCIAL_PROFILE_URLS` alanına yazıldığında sosyal kartlar otomatik etkinleşir. Bu tarihe kadar ziyaretçilere görünmezler; yanlış hesaplara yönlendirme yapılmaz.
+- Instagram ve YouTube **tam URL'si doğrulanmadığı için** şu an görünmez. Adresleri `app.js` içindeki `SOCIAL_URLS` nesnesine ekleyip doğrulayınca görünür olurlar.
 
-## İçerik ve doğrulama
-- Kariyer geçmişi, kullanıcı tarafından paylaşılan deneyim ve çalışma alanlarını temel alır. Doğrulanamayan işveren adı, çalışma dönemi veya performans göstergesi uydurulmamıştır.
-- Projeler, GitHub README dosyalarıyla eşleştirilmiştir.
-- LinkedIn paylaşımları, kullanıcının GitHub projelerine bağlanan iki herkese açık gönderiyi işaret eder.
-- Projeler beta veya geliştirme aşamasında olabilir. Gerçek kullanım için her projenin kendi kurulum, test ve güvenlik notlarını kontrol edin.
+## İçerik doğrulama
 
-## Alan adı
-Henüz `numandegirmenci.com` satın alınmadı ve DNS yapılandırması yapılmadı. GitHub Pages adresi kullanılmaya devam eder. Özel alan adı alındığında GitHub Pages ayarları ve DNS kayıtları ayrıca yapılandırılmalıdır.
+Mesleki roller daha önce kullanıcı tarafından paylaşılan kariyer bilgisinden, uygulamaların işlevleri GitHub projelerinin README dosyalarından ve iki paylaşım herkese açık LinkedIn gönderilerinden derlendi. Doğrulanmamış işverenler, çalışma tarihleri, test edilmiş sürüm iddiaları veya performans verileri eklenmedi. Uygulamaların beta / test koşulları için ilgili GitHub deposundaki sürüm notları geçerlidir.
 
-## Gizlilik
-Site çerez, izleme pikseli veya analitik kullanmaz. Google Fonts harici yazı tipi kaynağıdır; bu servisi kaldırıp sistem fontları da kullanılabilir.
+## Yayınlama ve alan adı
+
+GitHub Pages `main` dalının kök dizinini yayınlar. Bu sürüm özel `.com` alan adı satın alınmadan çalışır. `numandegirmenci.com` henüz satın alınmamış veya DNS bağlantısı yapılmış olarak kabul edilmez. Özel alan adı edinildiğinde DNS ve Pages ayarları ayrıca yapılmalıdır.
+
+## Gizlilik ve erişilebilirlik
+
+İletişim formu, izleyici veya çerez analitiği yok. Dış bağlantılarda `noopener noreferrer` kullanılır. Google Fonts dış kaynaktan yüklenir; internet erişimi olmazsa sistem yazı tipleri devreye girer. Görsel hareketler `prefers-reduced-motion` ile azaltılır.
