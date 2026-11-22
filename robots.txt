@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://numandegirmenci.github.io/sitemap.xml
