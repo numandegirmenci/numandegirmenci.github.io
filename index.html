@@ -1,144 +1,195 @@
 <!doctype html>
 <html lang="tr" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d1218">
-  <meta name="color-scheme" content="dark light">
-  <meta name="description" content="Osman Numan Değirmenci. İdari işler, mağaza açılışları, resmi kurum süreçleri, operasyon ve bu süreçler için geliştirdiğim açık kaynaklı dijital araçlar.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Numan Değirmenci — İdari İşler ve Dijital Projeler">
-  <meta property="og:description" content="İdari işler ve operasyon alanındaki deneyimim, geliştirdiğim araçlar ve yayınladığım projeler.">
-  <meta property="og:url" content="https://numandegirmenci.github.io/">
-  <link rel="canonical" href="https://numandegirmenci.github.io/">
-  <meta name="robots" content="index,follow">
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <title>Numan Değirmenci — Kişisel Web Sitesi</title>
-  <script>try { document.documentElement.dataset.theme = localStorage.getItem('nd-theme-v4') || 'dark' } catch(e) { document.documentElement.dataset.theme = 'dark' }</script>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d14">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Osman Numan Değirmenci — İdari işler, mağaza açılışları, ruhsat ve resmi kurum süreçleri, operasyon ve geliştirdiğim dijital araçlar.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Numan Değirmenci | Operasyon ve Dijital Projeler">
+<meta property="og:description" content="Mesleki deneyimim ve gerçek ihtiyaçlardan doğan projeler. Günİzi, Türkçe PDF OCR ve daha fazlası.">
+<meta property="og:url" content="https://numandegirmenci.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://numandegirmenci.github.io/">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Numan Değirmenci — Kişisel Portfolyo</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("nd-theme-v5")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
+<link rel="stylesheet" href="./styles.css">
+<script src="./app.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#icerik">İçeriğe geç</a>
-  <header class="topbar" id="ust">
-    <div class="container header-inner">
-      <a class="brand" href="#ust" aria-label="Numan Değirmenci - Ana sayfa"><span class="brand-mark">ND<span>.</span></span><span class="brand-name">NUMAN DEĞİRMENCİ</span></a>
-      <nav class="site-nav" id="nav" aria-label="Ana menü">
-        <a href="#hakkimda">Hakkımda</a><a href="#deneyim">Deneyim</a><a href="#projeler">Projeler</a><a href="#baglantilar">Bağlantılar</a>
-      </nav>
-      <div class="header-tools">
-        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Açık temaya geç" title="Temayı değiştir">
-          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
-          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 14A8.8 8.8 0 0 1 10 3.7 8.8 8.8 0 1 0 20.3 14Z"/></svg>
-        </button>
-        <a class="header-link" href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        <button class="menu-toggle" type="button" id="menuToggle" aria-controls="nav" aria-expanded="false" aria-label="Menüyü aç"><span></span><span></span></button>
+<a class="skip-link" href="#main">İçeriğe atla</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a href="#top" class="identity" aria-label="Numan Değirmenci ana sayfa">
+      <span class="identity-mark">ND<span class="identity-dot">.</span></span>
+      <span class="identity-divider"></span>
+      <span class="identity-caption">NUMAN DEĞİRMENCİ<br><small>KİŞİSEL WEB SİTESİ</small></span>
+    </a>
+    <nav class="navigation" id="navigation" aria-label="Ana menü">
+      <a href="#projeler">Projeler</a>
+      <a href="#neler-yapiyorum">Çalışma alanlarım</a>
+      <a href="#deneyim">Deneyim</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <div class="nav-tools">
+      <button type="button" class="theme-button" id="themeButton" aria-label="Açık temaya geç" title="Temayı değiştir">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.7a8.9 8.9 0 0 1-10.3-10.3 9.2 9.2 0 1 0 10.3 10.3Z" class="theme-moon"/><g class="theme-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></g></svg>
+      </button>
+      <a class="header-social" href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profilim">in <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="hero">
+    <div class="hero-ambient hero-ambient-one" aria-hidden="true"></div>
+    <div class="hero-ambient hero-ambient-two" aria-hidden="true"></div>
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <div class="kicker"><span class="kicker-dash"></span> MERHABA, BEN NUMAN <span class="kicker-pulse" aria-hidden="true"></span></div>
+        <h1>Operasyonun<br><span class="gradient-text">içinden gelen</span><br>fikirler.</h1>
+        <p class="hero-intro">İdari işler uzmanıyım. Mağaza açılışları, ruhsatlandırma ve resmi kurum süreçleriyle ilgileniyorum. Günlük işlerimde eksikliğini gördüğüm araçları da geliştiriyorum.</p>
+        <div class="hero-buttons">
+          <a href="#projeler" class="button button-primary">Projelerimi keşfet <span aria-hidden="true">↗</span></a>
+          <a href="#deneyim" class="button button-secondary">Beni tanı <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-mini-profile"><img src="https://avatars.githubusercontent.com/u/229212901?v=4" loading="lazy" alt="GitHub profil fotoğrafı" width="42" height="42"><span><strong>Osman Numan Değirmenci</strong><small>İdari işler · Operasyon · Dijital araçlar</small></span></div>
+      </div>
+
+      <div class="hero-workspace" id="heroWorkspace" aria-label="Projelerimden görsel örnekler">
+        <div class="workspace-glow" aria-hidden="true"></div>
+        <div class="workspace-window workspace-back" aria-hidden="true"><div class="chrome"><i></i><i></i><i></i><span>DOKÜMANLAR / NOTLAR</span></div><span class="window-line long"></span><span class="window-line"></span><span class="window-line short"></span><span class="window-chip">İŞ AKIŞLARI</span></div>
+        <div class="workspace-window workspace-front" id="workspaceFront">
+          <div class="workspace-top"><span class="workspace-eyebrow">PROJE ÖNİZLEMESİ</span><span class="workspace-status"><span></span> AKTİF</span></div>
+          <div class="workspace-image-wrap">
+            <img id="workspaceImage" src="./assets/gunizi.svg" alt="Günİzi projesi için temsili arayüz görseli" width="1200" height="760" fetchpriority="high">
+          </div>
+          <div class="workspace-bottom"><div><span class="workspace-count" id="workspaceCounter">01 / 04</span><strong id="workspaceName">Günİzi</strong><small id="workspaceDescription">Android / Ses kaydı ve yerel analiz</small></div><a id="workspaceLink" href="https://github.com/numandegirmenci/gunizi-android" target="_blank" rel="noopener noreferrer" aria-label="Günİzi GitHub projesini aç">↗</a></div>
+        </div>
+        <div class="workspace-floating-label"><span class="floating-asterisk">✳</span><span>SAHADAN<br>EKRANA</span></div>
+        <div class="workspace-selector" role="group" aria-label="Önizleme projesini seç">
+          <button type="button" class="workspace-pick active" data-preview="0" aria-pressed="true">01</button>
+          <button type="button" class="workspace-pick" data-preview="1" aria-pressed="false">02</button>
+          <button type="button" class="workspace-pick" data-preview="2" aria-pressed="false">03</button>
+          <button type="button" class="workspace-pick" data-preview="3" aria-pressed="false">04</button>
+        </div>
       </div>
     </div>
-  </header>
+    <div class="hero-bottom-line container"><span>GERÇEK İHTİYAÇLAR. KİŞİSEL PROJELER.</span><a href="#projeler">AŞAĞI KAYDIR <span aria-hidden="true">↓</span></a></div>
+  </section>
 
-  <main id="icerik">
-    <section class="hero container" aria-labelledby="heroTitle">
-      <div class="hero-content">
-        <div class="eyebrow"><span class="eyebrow-line"></span> OSMAN NUMAN DEĞİRMENCİ <span class="dot-sep">·</span> KİŞİSEL PORTFOLYO</div>
-        <h1 id="heroTitle">Merhaba,<br>ben <span>Numan.</span></h1>
-        <p class="hero-subtitle">İdari işler ve operasyon alanında çalışıyorum. Günlük işimde karşılaştığım sorunlar için dijital araçlar geliştiriyorum.</p>
-        <p class="hero-detail">Mağaza açılışları, ruhsat ve abonelik işlemleri, resmi kurumlarla koordinasyon ve operasyonel süreç takibi profesyonel hayatımın önemli bir parçası.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projeler">Projelerimi incele <span aria-hidden="true">↗</span></a>
-          <a class="btn btn-secondary" href="#deneyim">Deneyimim <span aria-hidden="true">↓</span></a>
+  <div class="statement-band" aria-label="Çalışma alanları">
+    <div class="statement-track" aria-hidden="true"><span>İDARİ İŞLER</span><span class="band-icon">✳</span><span>SAHA OPERASYONLARI</span><span class="band-icon">✳</span><span>BELGE OTOMASYONU</span><span class="band-icon">✳</span><span>DİJİTAL PROJELER</span><span class="band-icon">✳</span><span>İDARİ İŞLER</span><span class="band-icon">✳</span><span>SAHA OPERASYONLARI</span><span class="band-icon">✳</span><span>BELGE OTOMASYONU</span><span class="band-icon">✳</span><span>DİJİTAL PROJELER</span><span class="band-icon">✳</span></div>
+  </div>
+
+  <section class="section projects-section" id="projeler">
+    <div class="container">
+      <div class="section-heading projects-heading" data-reveal>
+        <div><div class="section-number">01 — SEÇİLİ ÇALIŞMALAR</div><h2>Yaptığım işler,<br><em>gösterdiğim projeler.</em></h2></div>
+        <p>Her proje günlük hayatta karşılaştığım bir ihtiyaçtan doğdu. Henüz geliştirme aşamasında olanlar da var. Aşağıdan projeleri inceleyebilir, GitHub'daki kaynak kodlarına ulaşabilirsin.</p>
+      </div>
+      <div class="project-filters" role="group" aria-label="Projeleri filtrele" data-reveal>
+        <button class="project-filter active" data-filter="all" type="button" aria-pressed="true">Tümü <span>04</span></button>
+        <button class="project-filter" data-filter="android" type="button" aria-pressed="false">Android</button>
+        <button class="project-filter" data-filter="documents" type="button" aria-pressed="false">Belgeler</button>
+        <button class="project-filter" data-filter="outlook" type="button" aria-pressed="false">Outlook</button>
+        <button class="project-filter" data-filter="windows" type="button" aria-pressed="false">Windows</button>
+      </div>
+      <div class="project-gallery" id="projectGallery">
+        <article class="project-card project-card-featured" data-category="android" data-reveal>
+          <div class="project-media media-purple"><img src="./assets/gunizi.svg" alt="Günİzi ses kaydı uygulaması için hazırlanan temsili telefon ekranı" loading="lazy" width="1200" height="760"><span class="project-watermark">01</span><button type="button" class="project-detail-trigger" data-dialog="dialog-gunizi" aria-label="Günİzi detaylarını incele">Projeyi keşfet ↗</button></div>
+          <div class="project-caption"><div class="project-heading"><span>ANDROID · YEREL YAPAY ZEKA</span><h3>Günİzi</h3><p>Ses kaydı, konuşma dökümü ve cihaz içinde özetleme.</p></div><a href="https://github.com/numandegirmenci/gunizi-android" target="_blank" rel="noopener noreferrer" class="project-github">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="documents" data-reveal>
+          <div class="project-media media-green"><img src="./assets/ocr.svg" alt="PDF belge metin ve tablo analizini temsil eden görsel" loading="lazy" width="1200" height="760"><span class="project-watermark">02</span><button type="button" class="project-detail-trigger" data-dialog="dialog-ocr" aria-label="Türkçe PDF OCR detaylarını incele">Projeyi keşfet ↗</button></div>
+          <div class="project-caption"><div class="project-heading"><span>TARAYICI UZANTISI · OCR</span><h3>Türkçe PDF OCR</h3><p>Taranmış belgelerde metin ve tablo inceleme.</p></div><a href="https://github.com/numandegirmenci/vivaldi-turkce-pdf-ocr" target="_blank" rel="noopener noreferrer" class="project-github">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-category="outlook" data-reveal>
+          <div class="project-media media-blue"><img src="./assets/outlook.svg" alt="Outlook İş ve Yanıt Radarı görev takip panelinin temsili görseli" loading="lazy" width="1200" height="760"><span class="project-watermark">03</span><button type="button" class="project-detail-trigger" data-dialog="dialog-outlook" aria-label="İş ve Yanıt Radarı detaylarını incele">Projeyi keşfet ↗</button></div>
+          <div class="project-caption"><div class="project-heading"><span>OUTLOOK · VBA</span><h3>İş ve Yanıt Radarı</h3><p>Yanıt bekleyen e-postaları ve açık işleri takip etme.</p></div><a href="https://github.com/numandegirmenci/outlook-is-yanit-radari" target="_blank" rel="noopener noreferrer" class="project-github">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card project-card-wide" data-category="windows" data-reveal>
+          <div class="project-media media-coral"><img src="./assets/pdf-tools.svg" alt="Windows PDF sağ tık yazdırma aracının temsili menü görseli" loading="lazy" width="1200" height="760"><span class="project-watermark">04</span><button type="button" class="project-detail-trigger" data-dialog="dialog-pdf" aria-label="PDF Sağ Tıkla Yazdır detaylarını incele">Projeyi keşfet ↗</button></div>
+          <div class="project-caption"><div class="project-heading"><span>WINDOWS · POWERSHELL</span><h3>PDF Sağ Tıkla Yazdır</h3><p>Dosya Gezgini'nden hızlı PDF yazdırma.</p></div><a href="https://github.com/numandegirmenci/windows-pdf-sag-tik-yazdir" target="_blank" rel="noopener noreferrer" class="project-github">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <a class="all-work-link" href="https://github.com/numandegirmenci?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub'daki bütün projeler <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section id="neler-yapiyorum" class="section expertise-section">
+    <div class="container expertise-layout">
+      <div class="expertise-copy" data-reveal>
+        <div class="section-number">02 — İKİ FARKLI ALAN</div>
+        <h2>Tek bir alana<br><em>sığmıyorum.</em></h2>
+        <p>Mesleğimde süreçleri yönetiyorum. Boş zamanlarımda ise işi kolaylaştıracak araçlarla uğraşıyorum. İkisini birbirinden ayrı düşünmüyorum.</p>
+        <div class="expertise-choices" role="group" aria-label="Çalışma alanı seç">
+          <button type="button" class="expertise-choice active" data-focus="operations" aria-pressed="true"><span>01</span> Operasyon</button>
+          <button type="button" class="expertise-choice" data-focus="products" aria-pressed="false"><span>02</span> Dijital üretim</button>
         </div>
       </div>
-      <aside class="hero-panel" aria-label="Kısa profil özeti">
-        <div class="panel-head"><span>PROFİL / KISA ÖZET</span><span class="panel-head-indicator" aria-hidden="true"></span></div>
-        <div class="panel-body"><span class="profile-avatar" aria-hidden="true">ND</span><h2>İdari İşler Uzmanı</h2><p>Operasyon ve idari süreçlerde 7 yılı aşkın deneyim.</p></div>
-        <div class="profile-facts">
-          <div><span>Çalışma alanı</span><strong>İdari işler · Operasyon</strong></div>
-          <div><span>Odaklandığım konular</span><strong>Resmi işlemler · Süreç takibi</strong></div>
-          <div><span>Açık kaynak çalışmalar</span><strong>Android · OCR · Outlook</strong></div>
-        </div>
-        <a class="panel-bottom" href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer">LinkedIn'de kariyer geçmişim <span aria-hidden="true">↗</span></a>
-      </aside>
-    </section>
-
-    <section id="hakkimda" class="section-wrap">
-      <div class="container about-grid">
-        <div class="section-heading"><span class="section-kicker">HAKKIMDA</span><h2>İşimi biliyorum.<br><span>Eksik gördüğüm araçları geliştiriyorum.</span></h2></div>
-        <div class="prose">
-          <p>Meslek hayatım boyunca lojistik, sevkiyat ve idari işler tarafında farklı sorumluluklar üstlendim. Bugün ağırlıklı olarak mağaza açılışları, işyeri ruhsatlandırma, abonelik süreçleri ve resmi kurumlarla yürütülen işlemler üzerinde çalışıyorum.</p>
-          <p>İşin bir de görünmeyen tarafı var: tekrar tekrar kontrol edilen belgeler, takibi unutulabilen e-postalar, farklı programlar arasında yapılan işlemler. GitHub'daki projelerimin bir kısmı bu ihtiyaçlardan doğdu.</p>
-          <p>İhtiyaç duyduğum bir araç yoksa kendim geliştirmeyi deniyorum. Bazen bir Outlook kolaylığı, bazen bir PDF aracı, bazen de bir Android uygulaması oluyor. Bu sitede bu çalışmalarımı ve mesleki deneyimimi paylaşıyorum.</p>
-        </div>
+      <div class="expertise-interactive" id="expertiseInteractive" data-reveal>
+        <div class="experience-panel-head"><span>ÇALIŞMA ALANLARIM</span><span class="orbital-icon" aria-hidden="true">✳</span></div>
+        <div class="expertise-scene"><div class="ring ring-large"></div><div class="ring ring-small"></div><span class="center-glyph" id="focusGlyph" aria-hidden="true">⌘</span><span class="ring-node node-a"></span><span class="ring-node node-b"></span></div>
+        <div class="focus-readout"><span id="focusIndex">01 / 02</span><h3 id="focusTitle">Operasyonun içinde</h3><p id="focusDescription">Mağaza açılışı, ruhsatlandırma, abonelik ve resmi kurum işlemleri gibi farklı tarafları aynı takvimde buluşturan süreçleri takip ediyorum.</p><div class="focus-tags" id="focusTags"><span>Resmi kurumlar</span><span>Ruhsat</span><span>Abonelikler</span><span>Koordinasyon</span></div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section-wrap experience-section" id="deneyim">
-      <div class="container">
-        <div class="section-heading narrow"><span class="section-kicker">DENEYİM</span><h2>Çalıştığım alanlar.</h2><p>İdari işlerden lojistik planlamaya uzanan deneyimim, operasyonun farklı yönlerini birlikte değerlendirmemi sağlıyor.</p></div>
-        <div class="experience-layout">
-          <div class="career-list">
-            <article class="career-item"><div class="career-icon" aria-hidden="true">01</div><div><h3>İdari İşler Uzmanı</h3><p class="career-scope">İdari işler ve saha koordinasyonu</p><p>Mağaza açılışları, belediye ve diğer resmi kurumlarla işlemler, işyeri ruhsatları, abonelik başvuruları, evrak kontrolü ve ilgili ekiplerle süreç takibi.</p></div></article>
-            <article class="career-item"><div class="career-icon" aria-hidden="true">02</div><div><h3>Depo Sevkiyat Sorumlusu</h3><p class="career-scope">Depo ve sevkiyat operasyonları</p><p>Sevkiyatın günlük işleyişi, operasyonel kontroller ve depo süreçlerinin takibi.</p></div></article>
-            <article class="career-item"><div class="career-icon" aria-hidden="true">03</div><div><h3>Sevkiyat Planlama Ekip Lideri</h3><p class="career-scope">Planlama ve ekip koordinasyonu</p><p>Sevkiyat planlarının takibi, ekipler arası koordinasyon ve iş akışının yönetimi.</p></div></article>
-            <article class="career-item"><div class="career-icon" aria-hidden="true">04</div><div><h3>Vardiya Amiri</h3><p class="career-scope">Saha operasyonları</p><p>Vardiya düzeni, operasyonel öncelikler ve günlük işlerin koordinasyonu.</p></div></article>
-          </div>
-          <aside class="toolkit">
-            <span class="tiny-heading">ÇALIŞMA PRATİĞİ</span>
-            <h3>Takip, koordinasyon ve çözüm üretme.</h3>
-            <p>Günlük işimde kullandığım ve üzerinde çalıştığım yöntemlerin ortak noktası, işleri daha düzenli ve izlenebilir hale getirmek.</p>
-            <div class="toolkit-grid"><span>Resmi kurum süreçleri</span><span>Ruhsat &amp; abonelik</span><span>Excel / makrolar</span><span>SAP &amp; Optiyol</span><span>OCR ve PDF</span><span>Outlook otomasyonu</span></div>
-            <a href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer">Kariyer profilime git <span aria-hidden="true">↗</span></a>
-          </aside>
-        </div>
+  <section class="section story-section" id="deneyim">
+    <div class="container story-layout">
+      <div class="story-left" data-reveal>
+        <div class="section-number">03 — DENEYİM</div>
+        <h2>Önce sahada<br><em>öğrendim.</em></h2>
+        <p>İdari işler ve operasyon alanında 7 yılı aşkın deneyimim var. Lojistik, sevkiyat planlama ve vardiya yönetimi geçmişim bugün yaptığım işlere farklı bir bakış kazandırıyor.</p>
+        <div class="story-portrait"><img src="https://avatars.githubusercontent.com/u/229212901?v=4" alt="Numan Değirmenci'nin GitHub profil fotoğrafı" loading="lazy" width="270" height="270"><div class="story-portrait-overlay"><span>MESLEKİ GEÇMİŞ</span><strong>İdari işler &amp; operasyon</strong></div></div>
       </div>
-    </section>
-
-    <section class="section-wrap projects-section" id="projeler">
-      <div class="container">
-        <div class="projects-heading"><div class="section-heading"><span class="section-kicker">GİTHUB / SEÇİLİ ÇALIŞMALAR</span><h2>Geliştirdiğim projeler.</h2></div><p>Her birinin çıkış noktası belirli bir ihtiyaç. Kaynak kodları ve geliştirme notları GitHub'da açık.</p></div>
-        <div class="projects-list">
-          <article class="project-row">
-            <div class="project-num">01</div><div class="project-main"><div class="project-category">ANDROID · SES KAYDI · YEREL YAPAY ZEKA</div><h3>Günİzi</h3><p>Android'de geçmişe dönük ses kaydı, konuşmaları Türkçe metne dönüştürme ve cihaz üzerinde özetleme amacıyla geliştirdiğim uygulama.</p><div class="project-tags"><span>Android</span><span>Whisper</span><span>Yerel işleme</span></div></div><a href="https://github.com/numandegirmenci/gunizi-android" target="_blank" rel="noopener noreferrer" class="project-open" aria-label="Günİzi projesini GitHub'da aç">Projeye git <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-row">
-            <div class="project-num">02</div><div class="project-main"><div class="project-category">TARAYICI UZANTISI · BELGE İŞLEME</div><h3>Türkçe PDF OCR</h3><p>Seçilemeyen PDF metinlerini okumayı ve taranmış evraklardaki bilgileri kopyalamayı kolaylaştıran Chromium tabanlı tarayıcı uzantısı.</p><div class="project-tags"><span>PDF</span><span>OCR</span><span>Vivaldi / Chromium</span></div></div><a href="https://github.com/numandegirmenci/vivaldi-turkce-pdf-ocr" target="_blank" rel="noopener noreferrer" class="project-open" aria-label="Türkçe PDF OCR projesini GitHub'da aç">Projeye git <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-row">
-            <div class="project-num">03</div><div class="project-main"><div class="project-category">OUTLOOK · GÖREV VE YANIT TAKİBİ</div><h3>İş ve Yanıt Radarı</h3><p>E-postadan doğan işleri, kimden yanıt beklendiğini ve hatırlatmaları klasik Outlook üzerinden takip etmeye yönelik açık kaynaklı araç.</p><div class="project-tags"><span>Outlook</span><span>VBA</span><span>İş akışı</span></div></div><a href="https://github.com/numandegirmenci/outlook-is-yanit-radari" target="_blank" rel="noopener noreferrer" class="project-open" aria-label="Outlook İş ve Yanıt Radarı projesini GitHub'da aç">Projeye git <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-row">
-            <div class="project-num">04</div><div class="project-main"><div class="project-category">WINDOWS · KÜÇÜK ARAÇLAR</div><h3>PDF Sağ Tıkla Yazdır</h3><p>Windows'un sağ tık menüsüne PDF yazdırma seçenekleri ekleyerek sık yapılan küçük bir işlemi hızlandıran yardımcı araç.</p><div class="project-tags"><span>Windows</span><span>PowerShell</span><span>PDF</span></div></div><a href="https://github.com/numandegirmenci/windows-pdf-sag-tik-yazdir" target="_blank" rel="noopener noreferrer" class="project-open" aria-label="PDF Sağ Tıkla Yazdır projesini GitHub'da aç">Projeye git <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-        <div class="projects-footer"><span>Projelerin bazıları halen geliştirme veya beta aşamasındadır.</span><a href="https://github.com/numandegirmenci?tab=repositories" target="_blank" rel="noopener noreferrer">Tüm GitHub depolarım <span aria-hidden="true">↗</span></a></div>
+      <div class="timeline" data-reveal>
+        <article class="timeline-item"><span>01 / İDARİ İŞLER</span><h3>İdari İşler Uzmanı</h3><p>Mağaza açılışları, belediyelerle yürütülen işlemler, ruhsat başvuruları, abonelikler ve evrak süreçlerinin takibi.</p></article>
+        <article class="timeline-item"><span>02 / DEPO VE SEVKİYAT</span><h3>Depo Sevkiyat Sorumlusu</h3><p>Depo operasyonlarının ve sevkiyat akışının koordinasyonu.</p></article>
+        <article class="timeline-item"><span>03 / PLANLAMA</span><h3>Sevkiyat Planlama Ekip Lideri</h3><p>Sevkiyat planlaması, iş akışının takibi ve ekipler arası koordinasyon.</p></article>
+        <article class="timeline-item"><span>04 / SAHA YÖNETİMİ</span><h3>Vardiya Amiri</h3><p>Günlük işlerin, vardiya düzeninin ve operasyonel önceliklerin yönetimi.</p></article>
+        <a class="timeline-link" href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer">Kariyer geçmişim LinkedIn'de <span aria-hidden="true">↗</span></a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section-wrap writing-section" id="yazilar">
-      <div class="container"><div class="section-heading narrow"><span class="section-kicker">PAYLAŞIMLAR</span><h2>Notlar ve paylaşımlar.</h2><p>Üzerinde çalıştığım araçları ve neden geliştirdiğimi LinkedIn'de de paylaşıyorum.</p></div>
-        <div class="writing-grid">
-          <a class="writing-card" href="https://tr.linkedin.com/posts/numandegirmencii_github-numandegirmencivivaldi-turkce-pdf-ocr-activity-7527848549980467200-11rt" target="_blank" rel="noopener noreferrer"><div><span class="writing-category">LINKEDIN / BELGE İŞLEME</span><h3>PDF belgelerdeki metni yeniden yazmak zorunda mıyız?</h3><p>Türkçe PDF OCR projesinin neden ortaya çıktığı ve çözmeyi hedeflediği sorunlar.</p></div><span class="writing-arrow" aria-hidden="true">↗</span></a>
-          <a class="writing-card" href="https://tr.linkedin.com/posts/numandegirmencii_github-numandegirmencioutlook-is-yanit-radari-activity-7528598576713785345-GK5Q" target="_blank" rel="noopener noreferrer"><div><span class="writing-category">LINKEDIN / İŞ TAKİBİ</span><h3>Bekleyen işler e-posta kutusunda kaybolmasın.</h3><p>Outlook İş ve Yanıt Radarı'nın çıkış noktası ve kullanım amacı.</p></div><span class="writing-arrow" aria-hidden="true">↗</span></a>
-        </div>
+  <section class="section notes-section" id="notlar">
+    <div class="container">
+      <div class="notes-top" data-reveal><div><div class="section-number">04 — PAYLAŞTIKLARIM</div><h2>Geliştirirken<br><em>paylaşıyorum.</em></h2></div><p>Farklı uygulamalar üzerinde çalışırken, neden geliştirdiğimi ve hangi ihtiyaçları çözmeyi hedeflediğimi LinkedIn'de anlatıyorum.</p></div>
+      <div class="note-grid">
+        <a data-reveal class="note-link" href="https://tr.linkedin.com/posts/numandegirmencii_github-numandegirmencivivaldi-turkce-pdf-ocr-activity-7527848549980467200-11rt" target="_blank" rel="noopener noreferrer"><span>LINKEDIN / OCR</span><h3>PDF belgelerdeki metni yeniden yazmak zorunda mıyız?</h3><span class="note-arrow">↗</span></a>
+        <a data-reveal class="note-link" href="https://tr.linkedin.com/posts/numandegirmencii_github-numandegirmencioutlook-is-yanit-radari-activity-7528598576713785345-GK5Q" target="_blank" rel="noopener noreferrer"><span>LINKEDIN / OUTLOOK</span><h3>İş takibi, gelen kutusunda kaybolmak zorunda değil.</h3><span class="note-arrow">↗</span></a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="baglantilar" class="section-wrap connect-section">
-      <div class="container">
-        <div class="connect-intro"><span class="section-kicker">BAĞLANTILAR</span><h2>İletişimde kalalım.</h2><p>Profesyonel geçmişim, paylaşımlarım ve yazılım projelerim için aşağıdaki profilleri kullanabilirsin.</p></div>
+  <section class="contact-section" id="iletisim">
+    <div class="container contact-layout" data-reveal>
+      <div><span class="section-number">05 — BAĞLANTI KURALIM</span><h2>İletişimde<br><em>kalalım.</em></h2><p>Projelerle ilgili görüşlerini paylaşmak veya profesyonel olarak bağlantı kurmak istersen LinkedIn üzerinden ulaşabilirsin.</p></div>
+      <div class="contact-right">
+        <a href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer" class="contact-main-link">LinkedIn'de bağlantı kur <span aria-hidden="true">↗</span></a>
         <div class="social-grid">
-          <a class="social-card" href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer"><span class="social-icon linkedin" aria-hidden="true">in</span><span class="social-copy"><strong>LinkedIn</strong><small>Kariyer ve paylaşımlar</small></span><span class="social-arrow" aria-hidden="true">↗</span></a>
-          <a class="social-card" href="https://github.com/numandegirmenci" target="_blank" rel="noopener noreferrer"><span class="social-icon github" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 19c-4.2 1.3-4.2-2.3-6-2.3m12 4v-3.6c0-1.1.4-1.8.8-2.2-3.6-.4-7.3-1.7-7.3-7.5a5.9 5.9 0 0 1 1.6-4.1 5.4 5.4 0 0 1 .2-4s1.3-.4 4.2 1.6a14.7 14.7 0 0 1 7.6 0c2.9-2 4.2-1.6 4.2-1.6a5.4 5.4 0 0 1 .2 4 5.9 5.9 0 0 1 1.6 4.1c0 5.8-3.7 7.1-7.3 7.5.5.5.8 1.3.8 2.2V21" transform="translate(3,3) scale(.76)" stroke="currentColor" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="social-copy"><strong>GitHub</strong><small>Kaynak kodları ve projeler</small></span><span class="social-arrow" aria-hidden="true">↗</span></a>
-          <div class="social-card pending" data-social="instagram" hidden aria-label="Instagram bağlantısı bekleniyor"><span class="social-icon instagram" aria-hidden="true">◎</span><span class="social-copy"><strong>Instagram</strong><small>Profil adresi eklenecek</small></span><span class="pending-label">—</span></div>
-          <div class="social-card pending" data-social="youtube" hidden aria-label="YouTube bağlantısı bekleniyor"><span class="social-icon youtube" aria-hidden="true">▶</span><span class="social-copy"><strong>YouTube</strong><small>Kanal adresi eklenecek</small></span><span class="pending-label">—</span></div>
+          <a href="https://github.com/numandegirmenci" target="_blank" rel="noopener noreferrer"><span class="social-ico">GH</span> GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/numandegirmencii/" target="_blank" rel="noopener noreferrer"><span class="social-ico">in</span> LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="#" data-social="instagram" hidden><span class="social-ico">◎</span> Instagram <span aria-hidden="true">↗</span></a>
+          <a href="#" data-social="youtube" hidden><span class="social-ico">▶</span> YouTube <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="container footer-layout"><div><a href="#top" class="footer-logo">ND<span>.</span></a><span>© <span id="year">2026</span> Osman Numan Değirmenci</span></div><span>Gerçek ihtiyaçlardan doğan projeler.</span><a href="#top">Yukarı dön ↑</a></div></footer>
 
-  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><strong>Numan Değirmenci<span>.</span></strong><small>İdari İşler &amp; Operasyon</small></div><p>© <span id="year">2026</span> Osman Numan Değirmenci</p><a href="#ust">Başa dön ↑</a></div></footer>
+<dialog class="project-dialog" id="dialog-gunizi" aria-labelledby="dialog-gunizi-title"><div class="dialog-layout"><button type="button" class="dialog-close" data-close aria-label="Detayı kapat">×</button><img src="./assets/gunizi.svg" alt="Günİzi için temsili uygulama görseli" width="1200" height="760" loading="lazy"><div class="dialog-copy"><span>ANDROID / YEREL YAPAY ZEKA</span><h2 id="dialog-gunizi-title">Günİzi</h2><p>Uzun ses kayıtlarının içindeki bilgiyi daha sonra bulabilmek ve konuşmaları anlaşılır notlara dönüştürmek için üzerinde çalıştığım Android uygulaması.</p><ul><li>Geçmişe dönük ses kaydı</li><li>Türkçe konuşma dökümü</li><li>Cihaz üzerinde yapay zeka destekli özetler</li></ul><p class="dialog-disclaimer">Uygulama aktif olarak geliştiriliyor. Sürüm ve uyumluluk notları GitHub'da.</p><a href="https://github.com/numandegirmenci/gunizi-android" target="_blank" rel="noopener noreferrer">GitHub'da incele ↗</a></div></div></dialog>
+<dialog class="project-dialog" id="dialog-ocr" aria-labelledby="dialog-ocr-title"><div class="dialog-layout"><button type="button" class="dialog-close" data-close aria-label="Detayı kapat">×</button><img src="./assets/ocr.svg" alt="Türkçe PDF OCR için temsili arayüz görseli" width="1200" height="760" loading="lazy"><div class="dialog-copy"><span>CHROMIUM / BELGE İŞLEME</span><h2 id="dialog-ocr-title">Türkçe PDF OCR</h2><p>PDF belgelerde metin seçme, kopyalama ve tabloları inceleme ihtiyacından doğan tarayıcı uzantısı.</p><ul><li>Türkçe OCR ve PDF metni</li><li>Tabloları ayırma ve dışa aktarma</li><li>Vivaldi odaklı Chromium desteği</li></ul><p class="dialog-disclaimer">Beta aşamasında, bazı PDF ve tarayıcılarda farklı sonuçlar verebilir.</p><a href="https://github.com/numandegirmenci/vivaldi-turkce-pdf-ocr" target="_blank" rel="noopener noreferrer">GitHub'da incele ↗</a></div></div></dialog>
+<dialog class="project-dialog" id="dialog-outlook" aria-labelledby="dialog-outlook-title"><div class="dialog-layout"><button type="button" class="dialog-close" data-close aria-label="Detayı kapat">×</button><img src="./assets/outlook.svg" alt="Outlook İş ve Yanıt Radarı için temsili arayüz görseli" width="1200" height="760" loading="lazy"><div class="dialog-copy"><span>OUTLOOK / VBA</span><h2 id="dialog-outlook-title">İş ve Yanıt Radarı</h2><p>Yanıt beklediğim yazışmaları, açık işleri ve hatırlatmaları ayrı bir uygulamaya geçmeden Outlook'ta takip etme fikri.</p><ul><li>Gelen veya gönderilen e-postadan iş kaydı</li><li>Açık işler ve bekleyen yanıtlar</li><li>Kontrol edilen yanıt taslakları</li></ul><p class="dialog-disclaimer">Klasik Windows Outlook ve kurumun izin verdiği VBA ortamını gerektirir.</p><a href="https://github.com/numandegirmenci/outlook-is-yanit-radari" target="_blank" rel="noopener noreferrer">GitHub'da incele ↗</a></div></div></dialog>
+<dialog class="project-dialog" id="dialog-pdf" aria-labelledby="dialog-pdf-title"><div class="dialog-layout"><button type="button" class="dialog-close" data-close aria-label="Detayı kapat">×</button><img src="./assets/pdf-tools.svg" alt="Windows PDF aracının temsili arayüz görseli" width="1200" height="760" loading="lazy"><div class="dialog-copy"><span>WINDOWS / POWERSHELL</span><h2 id="dialog-pdf-title">PDF Sağ Tıkla Yazdır</h2><p>PDF dosyalarını açıp yazdır menüsünü aramak yerine doğrudan Dosya Gezgini üzerinden yazdırmaya odaklanan küçük bir yardımcı araç.</p><ul><li>Varsayılan yazıcıya gönderme</li><li>Yazıcı seçerek yazdırma</li><li>PDF varsayılan uygulamasını değiştirmeme</li></ul><a href="https://github.com/numandegirmenci/windows-pdf-sag-tik-yazdir" target="_blank" rel="noopener noreferrer">GitHub'da incele ↗</a></div></div></dialog>
 </body>
 </html>
