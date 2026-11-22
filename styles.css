@@ -17,3 +17,44 @@
 @media(max-width:900px){.shell{width:min(100% - 56px,740px)}.nav{min-height:72px}.menu{position:absolute;top:71px;right:0;left:0;display:none;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:13px 28px;box-shadow:var(--elevation);align-items:stretch;margin:0}.menu.open{display:flex}.menu a{padding:13px 4px;font-size:14px}.menu-button{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;height:43px;width:43px;background:transparent;border:1px solid var(--line);border-radius:50%}.menu-button span{width:19px;height:2px;background:var(--ink);border-radius:2px}.hero{grid-template-columns:1fr;min-height:0;gap:60px;padding:80px 0 90px}.hero h1{font-size:clamp(55px,8vw,80px)}.hero-side{min-height:400px}.hero-side:before{display:none}.hero-side .process-ring{width:285px;height:285px}.hero-side .ring-two{width:214px;height:214px}.scroll-cue{bottom:24px}.ticker-inner{flex-wrap:wrap;gap:18px 28px;padding:25px 0;justify-content:center;min-height:unset}.about-grid,.expertise-header,.projects-heading,.approach-grid{display:block}.about-text{margin-top:29px}.facts{grid-template-columns:1fr 1fr;gap:25px}.fact-quote{display:none}.expertise-header>p,.projects-heading p{max-width:570px;margin-top:23px}.expertise-grid{gap:15px}.expertise-card{padding:26px}.project{gap:28px;grid-template-columns:.9fr 1.1fr}.project-illustration{height:275px}.project-info h3{font-size:31px}.project-info>p{font-size:13px}.project-keywords{margin-bottom:19px}.approach-grid .steps{margin-top:45px}.contact{padding-top:90px;padding-bottom:95px}}
 @media(max-width:660px){.shell{width:calc(100% - 36px)}.nav-github{display:none}.wordmark-box{font-size:27px}.wordmark-name{font-size:8px;padding-left:12px}.hero{padding-top:62px;gap:50px}.hero-label{font-size:9px;letter-spacing:1px}.hero h1{font-size:clamp(42px,10vw,62px);letter-spacing:-3.5px;margin:24px 0}.hero-summary{font-size:14px}.hero-actions{flex-direction:column;align-items:stretch;max-width:380px}.hero-side{min-height:324px;padding:20px}.process-visual{min-height:218px}.process-ring{max-width:220px;max-height:220px}.ring-two{max-width:166px;max-height:166px}.process-symbol{font-size:74px}.process-orbit-a{top:30px;right:calc(50% - 74px)}.process-orbit-b{left:calc(50% - 95px);bottom:25px}.hero-side-top,.hero-side-bottom{font-size:9px}.ticker-inner{gap:11px 18px}.ticker span{font-size:9px;letter-spacing:.8px}.ticker b{font-size:12px}.section{padding-top:83px;padding-bottom:83px}.section h2{font-size:clamp(32px,8vw,45px);letter-spacing:-2px}.about-grid{margin-top:24px}.about-text p{font-size:14px}.facts{margin-top:43px}.facts strong{font-size:42px}.facts>div{gap:12px}.facts p{font-size:10px}.expertise-grid{grid-template-columns:1fr;margin-top:35px}.expertise-card{min-height:0;padding:26px}.expertise-card h3{font-size:20px}.projects-heading{margin-bottom:32px}.project{display:flex;flex-direction:column;align-items:stretch;gap:27px;padding:30px 0 35px}.project-illustration{height:265px}.project-info h3{margin:16px 0 10px;font-size:28px}.project-info>p{font-size:14px}.project-keywords{margin-bottom:21px}.project-small{font-size:9px}.projects-bottom{flex-direction:column;align-items:flex-start}.approach-grid>div:first-child>p{font-size:14px}.steps>div{gap:15px;grid-template-columns:40px 1fr}.contact h2{font-size:clamp(46px,12vw,70px);letter-spacing:-3px}.contact-actions{display:flex;flex-direction:column;max-width:390px}.footer-grid{flex-wrap:wrap}.footer-grid>span{order:3;width:100%;text-align:center}.ill-ocr .paper-stack{transform:rotate(-6deg) translateY(18px) scale(.9)}.context-menu{right:4%}.project-illustration.ill-gunizi{height:260px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* v3 — Kariyer ve LinkedIn içeriği */
+.career-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}
+.career-heading{display:flex;align-items:end;justify-content:space-between;gap:32px;margin:26px 0 54px}
+.career-heading h2,.linkedin-head h2{font-size:clamp(35px,4.45vw,60px);letter-spacing:-3px;line-height:1.16;margin:0}
+.career-heading h2 span,.linkedin-head h2 span{color:var(--muted)}
+.career-heading p{max-width:620px;color:var(--muted);font-size:15px;line-height:1.85;margin:23px 0 0}
+.career-heading .inline-link{white-space:nowrap;flex-shrink:0;margin-bottom:6px}
+.career-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:40px}
+.career-timeline{border-top:1px solid var(--line)}
+.career-role{display:grid;grid-template-columns:44px 1fr;gap:24px;border-bottom:1px solid var(--line);padding:27px 0}
+.role-index{font-size:11px;font-weight:800;color:var(--accent);padding-top:5px;letter-spacing:1px}
+.role-category,.career-note-kicker,.post-eyebrow{color:var(--soft);font-size:10px;font-weight:800;letter-spacing:1.25px}
+.career-role h3{font-size:21px;letter-spacing:-.7px;margin:6px 0 7px}
+.career-role p{font-size:13px;line-height:1.8;color:var(--muted);margin:0;max-width:640px}
+.career-note{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:31px;align-self:start;position:sticky;top:106px}
+.career-note h3{font-size:27px;letter-spacing:-1.15px;line-height:1.25;margin:22px 0}
+.career-note p{color:var(--muted);font-size:13px;line-height:1.85}
+.career-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:27px}
+.career-tags span{border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:11px;font-weight:700;padding:7px 10px;border-radius:5px}
+.linkedin-section{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.linkedin-head{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:end;margin:27px 0 42px}
+.linkedin-head>p{font-size:14px;line-height:1.85;color:var(--muted);margin:0 0 2px}
+.post-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.post-card{display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:31px;transition:border-color .2s,transform .2s}
+.post-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.post-eyebrow{display:flex;justify-content:space-between;gap:18px}
+.post-eyebrow span:last-child{color:var(--accent)}
+.post-card h3{font-size:23px;line-height:1.36;letter-spacing:-.8px;margin:28px 0 15px;max-width:440px}
+.post-card p{color:var(--muted);font-size:13px;line-height:1.85;margin:0}
+.post-card ul{list-style:none;padding:0;margin:20px 0 24px;display:grid;gap:10px}
+.post-card li{font-size:12px;color:var(--muted);padding-left:20px;position:relative;line-height:1.55}
+.post-card li:before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;background:var(--accent);border-radius:50%}
+.post-link{font-size:12px;font-weight:800;color:var(--accent);margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:18px}
+.post-link:hover{text-decoration:underline;text-underline-offset:3px}
+.post-note{margin:20px 0 0;font-size:11px;color:var(--soft);line-height:1.7}
+:root[data-theme="dark"] body{background-image:radial-gradient(ellipse 60% 32% at 75% 4%,rgba(105,124,175,.075),transparent 80%)}
+:root[data-theme="dark"] .career-note{box-shadow:0 25px 70px rgba(0,0,0,.12)}
+@media(max-width:1100px){.career-heading{align-items:start}.career-layout{gap:25px}.career-note{padding:25px}.career-heading .inline-link{margin-top:12px}}
+@media(max-width:900px){.career-heading{display:block}.career-heading .inline-link{margin-top:22px}.career-layout{grid-template-columns:1fr}.career-note{position:static;max-width:100%}.linkedin-head{grid-template-columns:1fr;gap:16px}}
+@media(max-width:660px){.career-heading{margin-bottom:32px}.career-heading h2,.linkedin-head h2{font-size:clamp(31px,8vw,43px);letter-spacing:-1.9px}.career-role{grid-template-columns:26px 1fr;gap:16px;padding:23px 0}.career-role h3{font-size:18px}.career-role p{font-size:12px}.career-note{padding:24px}.career-note h3{font-size:24px}.post-grid{grid-template-columns:1fr;gap:16px}.post-card{padding:24px}.post-card h3{font-size:21px;margin-top:20px}.post-eyebrow{font-size:9px;letter-spacing:.5px}.linkedin-head{margin-bottom:27px}.footer-grid>div{flex-wrap:wrap}}
